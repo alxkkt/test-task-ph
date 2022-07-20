@@ -1,0 +1,10 @@
+.container {
+  @include mobile {
+    max-width: 375px;
+    padding: 14px 18px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+  }
+}
