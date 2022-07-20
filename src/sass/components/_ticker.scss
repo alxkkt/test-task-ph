@@ -1,0 +1,69 @@
+.ticker-container {
+  font-family: Montserrat;
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+
+  background: linear-gradient(90deg, #274cd6 0%, #cf63c6 49.91%, #80d7c4 100%);
+  color: #fff;
+}
+
+.ticker-wrapper__first {
+  overflow: hidden;
+
+  @include mobile {
+    width: 1000px;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.ticker-wrapper__first,
+.ticker-wrapper__second {
+  padding: 9px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, 0);
+  animation: ticker 30s infinite linear forwards;
+}
+
+.ticker-wrapper__second {
+  width: 100%;
+  animation: 30s ticker 15s infinite linear forwards;
+
+  @include mobile {
+    width: 1000px;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(100%, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.shipping-sign {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
