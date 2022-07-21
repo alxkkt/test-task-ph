@@ -1,7 +1,7 @@
 const openModalBtn = document.querySelector('[data-menu-open');
 const backdrop = document.querySelector('[data-modal');
 const closeBtn = document.querySelector('[data-modal-close]');
-const menuItemsRefs = document.querySelectorAll('[data-menu-item]');
+const menuItemsRefs = document.querySelectorAll('[data-menu-link]');
 
 openModalBtn.addEventListener('click', onModalOpen);
 backdrop.addEventListener('click', onBackdropClick);

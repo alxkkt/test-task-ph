@@ -10,6 +10,16 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @include desktop {
+    padding: 31px 120px;
+  }
+}
+
+.navmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navmenu-list {
@@ -19,6 +29,21 @@
 
   @include desktop {
     display: flex;
+  }
+}
+
+.navmenu-list__item {
+  &__link {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.37;
+
+    color: var(--main-black-color);
+  }
+
+  &:not(:last-child) {
+    margin-right: 25px;
   }
 }
 
@@ -62,9 +87,14 @@
   }
 }
 
-.btn-backround {
+.btn-backround.header-btn {
   width: 147px;
   height: 61px;
-  right: 14px;
-  bottom: 9px;
+  top: 55px;
+  right: 15px;
+}
+
+.user__field {
+  display: flex;
+  justify-content: space-between;
 }
