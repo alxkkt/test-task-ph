@@ -1,0 +1,38 @@
+.partners-section {
+  position: relative;
+  padding: 40px 17px;
+  background-color: var(--main-background-color);
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+
+  padding-bottom: 30px;
+}
+
+.btn-insurance {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--main-salmon-color);
+
+  &:hover,
+  &:focus {
+    transform: translate(1px, 1px);
+  }
+
+  &:focus {
+    border: 1.5px solid var(--main-baby-blue-color);
+  }
+}
+
+.btn-background.partners {
+  width: 176px;
+  height: 53px;
+  position: absolute;
+  background-color: var(--main-black-color);
+  border-radius: 10px;
+  right: 96px;
+  bottom: 36px;
+}

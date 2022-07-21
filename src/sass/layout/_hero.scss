@@ -1,0 +1,71 @@
+.hero__lable {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.37;
+  text-align: center;
+}
+
+.hero-container {
+  position: relative;
+  padding-top: 43px;
+
+  background: linear-gradient(270deg, #cfcdce 0%, #dadadc 44.29%, #dedde2 100%);
+}
+
+.hero__text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 95%;
+
+  text-align: center;
+  letter-spacing: -3px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.hero__testing {
+  font-family: Playfair Dispaly;
+  font-style: italic;
+  font-size: 44px;
+  letter-spacing: -3px;
+  color: var(--main-blue-color);
+}
+
+.hero__treatment {
+  font-family: Playfair Dispaly;
+  font-style: italic;
+  font-size: 44px;
+  letter-spacing: -3px;
+  color: var(--main-orange-color);
+}
+
+.start-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 36px;
+  //   box-shadow: 5px 5px 0px 0px var(--main-black-color);
+
+  color: var(--main-black-color);
+  background-color: var(--main-baby-blue-color);
+
+  &:hover,
+  &:focus {
+    transform: translate(1px, 1px);
+  }
+
+  &:focus {
+    border: 1.5px solid var(--main-baby-blue-color);
+  }
+}
+
+.btn-background.hero {
+  width: 156px;
+  height: 53px;
+  position: absolute;
+  background-color: var(--main-black-color);
+  border-radius: 10px;
+  right: 105px;
+  bottom: 9px;
+}

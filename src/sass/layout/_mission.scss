@@ -1,0 +1,65 @@
+.mission-section {
+  position: relative;
+  background-color: var(--main-black-color);
+  color: #fff;
+
+  padding-bottom: 0;
+}
+
+.mission-text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 1.05;
+  letter-spacing: -2px;
+
+  padding: 14px 0;
+
+  &__access,
+  &__afford,
+  &__easy {
+    font-family: Playfair Display;
+    font-style: italic;
+  }
+
+  &__access {
+    color: var(--main-orange-color);
+  }
+
+  &__afford {
+    color: var(--main-salmon-color);
+  }
+
+  &__easy {
+    color: var(--main-baby-blue-color);
+  }
+}
+
+.mission-description {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.button.mission {
+  margin-right: auto;
+  display: block;
+  background-color: var(--main-pink-color);
+
+  margin-bottom: 27px;
+}
+
+.btn-background.mission {
+  width: 137px;
+  height: 53px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  left: 24px;
+  bottom: 430px;
+}

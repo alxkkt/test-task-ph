@@ -1,0 +1,108 @@
+.features-section {
+  position: relative;
+}
+
+.features-list__item {
+  position: sticky;
+  top: 0;
+  padding: 0 11px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-orange-color),
+    var(--main-baby-blue-color)
+  );
+  border: 1px solid var(--main-black-color);
+  border-bottom: none;
+}
+
+.item__num {
+  font-family: Montserrat;
+
+  display: grid;
+  place-items: center;
+  width: 160px;
+  height: 54px;
+
+  margin: 0 auto;
+  border: 1px solid var(--main-black-color);
+  border-top: none;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: var(--main-background-color);
+}
+
+.features-lable {
+  padding-left: 7px;
+  padding-top: 38px;
+  padding-bottom: 20px;
+
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.37;
+  color: var(--main-background-color);
+}
+
+.features-sign {
+  font-family: Montserrat;
+  display: inline-block;
+  width: 290px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--main-background-color);
+
+  padding-left: 7px;
+  padding-bottom: 15px;
+
+  &__spec {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--main-salmon-color);
+  }
+}
+
+.btn-kit__features {
+  background-color: var(--main-salmon-color);
+}
+
+.btn-start__features {
+  background-color: var(--main-baby-blue-color);
+}
+
+.features-description {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--main-background-color);
+
+  padding-left: 7px;
+  padding-bottom: 45px;
+}
+
+.btn-backround.features.kit {
+  width: 117px;
+  height: 53px;
+  position: absolute;
+  background-color: var(--main-black-color);
+  border-radius: 10px;
+  left: 14px;
+  bottom: 321px;
+}
+
+.btn-backround.features.start {
+  width: 137px;
+  height: 53px;
+  position: absolute;
+  background-color: var(--main-black-color);
+  border-radius: 10px;
+  left: 14px;
+  bottom: 403px;
+}

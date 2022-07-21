@@ -1,5 +1,9 @@
 .header__wrapper {
+  position: relative;
+
+  margin: 0 auto;
   background-color: var(--main-background-color);
+  border-bottom: 1px solid var(--main-black-color);
 
   @include mobile {
     display: flex;
@@ -15,4 +19,50 @@
   @include desktop {
     display: flex;
   }
+}
+
+.burger-btn {
+  display: inline-block;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include desktop {
+    display: none;
+  }
+
+  &:focus {
+    border: 1.5px solid var(--main-baby-blue-color);
+  }
+}
+
+.offer-btn {
+  padding: 16px 27px;
+
+  color: var(--main-black-color);
+  background-color: var(--main-background-color);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(1px, 1px);
+  }
+
+  &:focus {
+    border: 1.5px solid var(--main-baby-blue-color);
+  }
+
+  &__icon {
+    font-size: 20px;
+    margin-left: 9px;
+  }
+}
+
+.btn-backround {
+  width: 147px;
+  height: 61px;
+  right: 14px;
+  bottom: 9px;
 }

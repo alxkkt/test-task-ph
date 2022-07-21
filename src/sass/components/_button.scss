@@ -1,0 +1,31 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--main-black-color);
+  border-radius: 10px;
+  padding: 16px 27px;
+  //   box-shadow: 5px 5px 0px 0px var(--main-black-color);
+
+  color: var(--main-black-color);
+  background-color: transparent;
+  cursor: pointer;
+
+  &__text {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translate(1px, 1px);
+  }
+
+  &:focus {
+    border: 1.5px solid var(--main-baby-blue-color);
+  }
+
+  transition: transform 250ms ease;
+}
