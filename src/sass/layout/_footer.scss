@@ -1,0 +1,31 @@
+.footer-wrapper {
+  background-color: var(--main-black-color);
+  padding: 28px 20px;
+
+  border-top: 1px solid var(--footer-text-color);
+}
+
+.faq-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.faq-list__item-link {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+
+  color: var(--main-background-color);
+}
+
+.copyright-info {
+  color: var(--footer-text-color);
+  padding-top: 22px;
+
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2.32;
+  text-align: center;
+}

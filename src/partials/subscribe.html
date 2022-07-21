@@ -8,14 +8,22 @@
       loading="lazy"
       class="subscribe-img"
     />
-    <h4 class="subscribe-sign">
-      Join the Waitlist
-      <span class="subscribe-sign__spec"
-        >Your partner will appreciate you.</span
-      >
-    </h4>
+    <h4 class="subscribe-sign">Join the Waitlist</h4>
+    <span class="subscribe-sign__spec">Your partner will appreciate you.</span>
     <p class="subscribe-sign__descr">
       Sign up with your email address to receive news and updates.
     </p>
+    <form class="subscribe-form">
+      <input
+        type="email"
+        name="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        class="subscribe-input"
+        placeholder="Email"
+      />
+      <button type="submit" class="button button__text btn-subscribe">
+        Subscribe
+      </button>
+    </form>
   </div>
 </section>

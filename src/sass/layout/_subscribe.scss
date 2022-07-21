@@ -6,6 +6,9 @@
     #dde6ef 100%
   );
   padding-top: 65px;
+  padding-bottom: 65px;
+  border: 1px solid var(--main-black-color);
+  border-top: none;
 }
 
 .subscribe-img {
@@ -13,12 +16,37 @@
 }
 
 .subscribe-sign {
+  display: block;
+  margin: 0 auto;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.05;
   color: var(--orangy-color);
-
   text-align: center;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
+
+  padding: 15px 0;
+
+  &__spec {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--main-black-color);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    text-align: center;
+  }
+
+  &__descr {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }

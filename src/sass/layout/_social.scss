@@ -1,0 +1,36 @@
+.social-section {
+  background-color: var(--main-black-color);
+  padding: 24px 18px;
+  padding-top: 112px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 20px;
+}
+
+.social-list__item {
+  position: relative;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.link-slash {
+  //   position: absolute;
+  color: var(--main-background-color);
+}
+
+.social-list__item-link {
+  color: var(--main-background-color);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.32;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

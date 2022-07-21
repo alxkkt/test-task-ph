@@ -1,5 +1,7 @@
 .header__wrapper {
   position: relative;
+  width: 100%;
+  padding: 14px 18px;
 
   margin: 0 auto;
   background-color: var(--main-background-color);
@@ -27,7 +29,8 @@
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #f3f3e7;
+  outline: none;
 
   @include desktop {
     display: none;
