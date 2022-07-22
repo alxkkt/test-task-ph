@@ -6,13 +6,25 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .products-list__item {
   border: 1px solid var(--main-black-color);
   border-bottom: none;
 
-  &:last-child {
+  @include desktop {
+    border-bottom: none;
+    border-left: none;
+
+    width: calc(100% / 2);
+  }
+
+  &:nth-child(n + 3) {
     border-bottom: 1px solid var(--main-black-color);
   }
 }
@@ -28,6 +40,10 @@
 
   padding-top: 21px;
   padding-bottom: 18px;
+
+  @include desktop {
+    font-size: 48px;
+  }
 }
 
 .product__description {
@@ -86,14 +102,29 @@
 .urine {
   top: -25px;
   left: 28px;
+
+  @include desktop {
+    top: -40;
+    left: 200;
+  }
 }
 
 .blood {
   top: -40px;
   right: 40px;
+
+  @include desktop {
+    top: -25;
+    right: 200;
+  }
 }
 
 .swab {
   bottom: -60px;
   right: 55px;
+
+  @include desktop {
+    bottom: -30;
+    right: 300;
+  }
 }

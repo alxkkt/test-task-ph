@@ -1,0 +1,80 @@
+.desktop-blog__wrapper {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    background-color: var(--main-black-color);
+
+    padding-top: 80px;
+    padding-bottom: 93px;
+    padding-left: 436px;
+    padding-right: 262px;
+
+    display: flex;
+  }
+}
+
+.navmenu-list.blog {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+}
+
+.navmenu-list__item:not(:last-child).blog {
+  margin-bottom: 25px;
+}
+
+.navmenu-list__item__link.blog {
+  color: var(--main-background-color);
+  font-size: 16px;
+}
+
+.faq-list-mobile.blog {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.faq-list__item-link {
+  font-size: 16px;
+}
+
+.faq-list__item:not(:last-child).blog {
+  margin-bottom: 25px;
+}
+
+.blog-offer {
+  position: relative;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.blog-sign {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--main-background-color);
+
+  margin-bottom: 12px;
+}
+
+.blog-btn {
+  background-color: var(--main-baby-blue-color);
+}
+
+.blog-bgc {
+  width: 142px;
+  height: 59px;
+  background-color: #fff;
+  top: 43;
+  right: 42;
+}

@@ -2,6 +2,10 @@
   background-color: var(--main-black-color);
   padding: 24px 18px;
   padding-top: 112px;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .social-list {
@@ -12,15 +16,23 @@
   padding: 20px;
 }
 
-.social-list__item {
-  position: relative;
-  &:hover {
-    transform: translateY(-2px);
+.social-list.blog {
+  @include desktop {
+    display: none;
   }
 }
 
+.social-list__item {
+  position: relative;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  transition: transform 250ms ease;
+}
+
 .link-slash {
-  //   position: absolute;
   color: var(--main-background-color);
 }
 
@@ -30,7 +42,17 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 2.32;
-  &:hover {
-    transform: translateY(-2px);
+
+  &:hover,
+  &:focus {
+    color: var(--orangy-color);
+  }
+
+  transition: color 250ms ease;
+}
+
+.subscribe-form.blog {
+  @include desktop {
+    display: none;
   }
 }

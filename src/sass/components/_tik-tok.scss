@@ -5,6 +5,11 @@
   padding-top: 41px;
   padding-left: 14px;
   padding-right: 14px;
+
+  @include desktop {
+    width: 50%;
+    padding-top: 71px;
+  }
 }
 
 .tik-tok-sign {
@@ -18,12 +23,28 @@
 
   padding-top: 15px;
   padding-bottom: 27px;
+
+  @include desktop {
+    font-size: 52px;
+    padding-bottom: 40px;
+  }
 }
 
 .tik-tok-img {
   margin: 0 auto;
+
+  @include desktop {
+    width: 86px;
+    height: 86px;
+  }
 }
 
 .tik-tok-bg-img {
   margin: 0 auto;
+
+  @include desktop {
+    margin-top: auto;
+    width: 385px;
+    height: 550px;
+  }
 }

@@ -3,11 +3,31 @@
   padding: 28px 20px;
 
   border-top: 1px solid var(--footer-text-color);
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 120px;
+    padding: 35px 0;
+  }
 }
 
-.faq-list {
+.faq-list-mobile {
   display: flex;
   justify-content: space-around;
+
+  &__item:hover,
+  &__item:focus {
+    transform: translateY(-1px);
+
+    transition: transform 250ms ease;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .faq-list__item-link {
@@ -17,6 +37,13 @@
   line-height: 1;
 
   color: var(--main-background-color);
+
+  &:hover,
+  &:focus {
+    color: var(--orangy-color);
+
+    transition: color 250ms ease;
+  }
 }
 
 .copyright-info {
@@ -28,4 +55,37 @@
   font-size: 15px;
   line-height: 2.32;
   text-align: center;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.social-list.desktop {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
+.social-list__item.desktop {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
+.form-container.footer {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+  }
 }

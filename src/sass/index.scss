@@ -11,8 +11,11 @@
 @import './components/ticker';
 @import './components/button';
 @import './components/btn-backround';
+@import './components/spotify';
+@import './components/tik-tok';
 @import './components/subscribe-input';
 @import './components/modal';
+@import './components/desktop-blog';
 
 // LAYOUT
 @import './layout/header';
@@ -22,7 +25,6 @@
 @import './layout/features';
 @import './layout/products';
 @import './layout/subscribe';
-@import './layout/spotify';
-@import './layout/tik-tok';
+@import './layout/blog';
 @import './layout/social';
 @import './layout/footer';

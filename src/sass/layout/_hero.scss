@@ -1,5 +1,15 @@
 .hero-section {
   background: linear-gradient(270deg, #cfcdce 0%, #dadadc 44.29%, #dedde2 100%);
+
+  @include desktop {
+    display: flex;
+    background: linear-gradient(
+      180deg,
+      #dedde2 0%,
+      #e3e6ed 44.29%,
+      #dde6ef 100%
+    );
+  }
 }
 
 .hero__lable {
@@ -8,6 +18,10 @@
   font-size: 14px;
   line-height: 1.37;
   text-align: center;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .hero-container {
@@ -16,6 +30,13 @@
   margin: 0 auto;
   padding: 14px 18px;
   width: 100%;
+
+  @include desktop {
+    width: 50%;
+
+    padding-left: 120px;
+    padding-top: 92px;
+  }
 }
 
 .hero__text {
@@ -28,6 +49,12 @@
   letter-spacing: -3px;
   padding-top: 20px;
   padding-bottom: 16px;
+
+  @include desktop {
+    font-size: 68px;
+
+    text-align: left;
+  }
 }
 
 .hero__testing {
@@ -36,6 +63,10 @@
   font-size: 44px;
   letter-spacing: -3px;
   color: var(--main-blue-color);
+
+  @include desktop {
+    font-size: 68px;
+  }
 }
 
 .hero__treatment {
@@ -44,6 +75,10 @@
   font-size: 44px;
   letter-spacing: -3px;
   color: var(--main-orange-color);
+
+  @include desktop {
+    font-size: 68px;
+  }
 }
 
 .start-btn {
@@ -62,6 +97,11 @@
   &:focus {
     border: 1.5px solid var(--main-baby-blue-color);
   }
+
+  @include desktop {
+    margin: 0;
+    margin-right: auto;
+  }
 }
 
 .btn-background.hero {
@@ -72,9 +112,18 @@
   border-radius: 10px;
   right: 105px;
   bottom: 9px;
+
+  @include desktop {
+    right: 440px;
+    bottom: 147px;
+  }
 }
 
 .hero__img {
   max-width: 100%;
   margin: 0 auto;
+
+  @include desktop {
+    width: 50%;
+  }
 }

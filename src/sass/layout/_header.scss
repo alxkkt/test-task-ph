@@ -12,7 +12,8 @@
   }
 
   @include desktop {
-    padding: 31px 120px;
+    padding: 11px 120px 19px;
+    height: 82px;
   }
 }
 
@@ -41,10 +42,23 @@
 
     color: var(--main-black-color);
   }
-
   &:not(:last-child) {
     margin-right: 25px;
   }
+
+  transition: all 250ms ease;
+}
+
+.navmenu-list__item:hover,
+.navmenu-list__item:focus {
+  transform: translateY(-1px);
+}
+
+.navmenu-list__item__link:hover,
+.navmenu-list__item__link:focus {
+  color: var(--orangy-color);
+
+  transition: color 250ms ease;
 }
 
 .burger-btn {
@@ -68,6 +82,10 @@
 .offer-btn {
   padding: 16px 27px;
 
+  @include desktop {
+    height: 59px;
+  }
+
   color: var(--main-black-color);
   background-color: var(--main-background-color);
   cursor: pointer;
@@ -89,12 +107,34 @@
 
 .btn-backround.header-btn {
   width: 147px;
-  height: 61px;
+  height: 55px;
   top: 55px;
   right: 15px;
+
+  @include desktop {
+    height: 55px;
+    right: 178px;
+    top: 48px;
+  }
 }
 
 .user__field {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: grid;
+    place-items: center;
+    width: 53px;
+    height: 53px;
+
+    margin-left: 8px;
+  }
 }

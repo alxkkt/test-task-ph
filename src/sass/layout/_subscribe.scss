@@ -9,6 +9,11 @@
   padding-bottom: 65px;
   border: 1px solid var(--main-black-color);
   border-top: none;
+
+  @include desktop {
+    padding-top: 96px;
+    padding-bottom: 119px;
+  }
 }
 
 .subscribe-img {
@@ -37,6 +42,11 @@
     line-height: 1.05;
     letter-spacing: -3px;
     text-align: center;
+
+    @include desktop {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__descr {

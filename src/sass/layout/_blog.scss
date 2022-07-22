@@ -1,0 +1,5 @@
+.blog-wrapper {
+  @include desktop {
+    display: flex;
+  }
+}

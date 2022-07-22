@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.form-container {
+  display: grid;
+  place-items: center;
+}
+
 .btn-subscribe {
   font-family: Montserrat;
   font-weight: 600;
@@ -31,6 +36,10 @@
 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+
+  @include desktop {
+    width: 250px;
+  }
 
   &:focus {
     outline: none;
